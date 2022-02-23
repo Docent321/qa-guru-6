@@ -1,6 +1,7 @@
 plugins {
-    id 'java-library'
+    id 'java'
 }
+
 
 repositories {
     mavenCentral()
@@ -9,11 +10,11 @@ repositories {
 
 dependencies {
     testImplementation (
-            "com.codeborne:selenide:6.2.1",
-            "org.junit.jupiter:junit-jupiter-api:5.8.2")
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.8.2"
+            'org.junit.jupiter:junit-jupiter:5.8.2',
+            'com.codeborne:selenide:6.3.3'
+    )
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
-
 
 test {
     useJUnitPlatform()
